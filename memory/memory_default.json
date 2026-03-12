@@ -1,0 +1,326 @@
+[
+  {
+    "type": "AIMessage",
+    "content": "The product of 6 and 7 is 42.",
+    "id": "lc_run--019ce340-564a-7241-b4b7-c0e66bfaace6-0",
+    "name": null,
+    "metadata": {
+      "token_usage": {
+        "completion_tokens": 14,
+        "prompt_tokens": 167,
+        "total_tokens": 181,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        }
+      },
+      "model_provider": "openai",
+      "model_name": "gpt-4.1-mini-2025-04-14",
+      "system_fingerprint": "fp_b6f445fc1c",
+      "id": "chatcmpl-DIeocqkJ28N4G0pyX55wB1NiAl2VR",
+      "prompt_filter_results": [
+        {
+          "prompt_index": 0,
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "filtered": false,
+              "detected": false
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          }
+        }
+      ],
+      "finish_reason": "stop",
+      "logprobs": null,
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "protected_material_code": {
+          "filtered": false,
+          "detected": false
+        },
+        "protected_material_text": {
+          "filtered": false,
+          "detected": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      }
+    }
+  },
+  {
+    "type": "HumanMessage",
+    "content": "add 10 to that",
+    "id": "a737cce3-b520-4647-a14c-ed2b41d22c13",
+    "name": "User",
+    "metadata": {}
+  },
+  {
+    "type": "AIMessage",
+    "content": "",
+    "id": "lc_run--019ce340-5979-7410-ab07-3f162cfe7312-0",
+    "name": null,
+    "metadata": {
+      "token_usage": {
+        "completion_tokens": 18,
+        "prompt_tokens": 194,
+        "total_tokens": 212,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        }
+      },
+      "model_provider": "openai",
+      "model_name": "gpt-4.1-mini-2025-04-14",
+      "system_fingerprint": "fp_b6f445fc1c",
+      "id": "chatcmpl-DIeod6cw6Bl99OOiYnIdyhsXfD7P2",
+      "prompt_filter_results": [
+        {
+          "prompt_index": 0,
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "filtered": false,
+              "detected": false
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          }
+        }
+      ],
+      "finish_reason": "tool_calls",
+      "logprobs": null,
+      "content_filter_results": {}
+    }
+  },
+  {
+    "type": "ToolMessage",
+    "content": "52",
+    "id": "8b323e1f-be43-449a-9f39-75d02fa600cd",
+    "name": "sum",
+    "metadata": {}
+  },
+  {
+    "type": "AIMessage",
+    "content": "Adding 10 to 42 gives 52.",
+    "id": "lc_run--019ce340-5d82-7150-a861-e6bd596786a7-0",
+    "name": null,
+    "metadata": {
+      "token_usage": {
+        "completion_tokens": 12,
+        "prompt_tokens": 219,
+        "total_tokens": 231,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        }
+      },
+      "model_provider": "openai",
+      "model_name": "gpt-4.1-mini-2025-04-14",
+      "system_fingerprint": "fp_b6f445fc1c",
+      "id": "chatcmpl-DIeoeDtarW84imFqYvCAWel5IbHcC",
+      "prompt_filter_results": [
+        {
+          "prompt_index": 0,
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "filtered": false,
+              "detected": false
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          }
+        }
+      ],
+      "finish_reason": "stop",
+      "logprobs": null,
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "protected_material_code": {
+          "filtered": false,
+          "detected": false
+        },
+        "protected_material_text": {
+          "filtered": false,
+          "detected": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      }
+    }
+  },
+  {
+    "type": "HumanMessage",
+    "content": "Gracias Kiro",
+    "id": "1d24ca2d-6ddf-457a-a2e2-1e6c868dd858",
+    "name": "User",
+    "metadata": {}
+  },
+  {
+    "type": "AIMessage",
+    "content": "¡De nada! Si necesitas más ayuda, aquí estaré. ¡Que tengas un buen día!",
+    "id": "lc_run--019ce340-6076-7ea2-b657-be863d327f07-0",
+    "name": null,
+    "metadata": {
+      "token_usage": {
+        "completion_tokens": 22,
+        "prompt_tokens": 199,
+        "total_tokens": 221,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        }
+      },
+      "model_provider": "openai",
+      "model_name": "gpt-4.1-mini-2025-04-14",
+      "system_fingerprint": "fp_b6f445fc1c",
+      "id": "chatcmpl-DIeof2qNFMkk9GJ27qm3tsc4I0pRM",
+      "prompt_filter_results": [
+        {
+          "prompt_index": 0,
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "filtered": false,
+              "detected": false
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          }
+        }
+      ],
+      "finish_reason": "stop",
+      "logprobs": null,
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "protected_material_code": {
+          "filtered": false,
+          "detected": false
+        },
+        "protected_material_text": {
+          "filtered": false,
+          "detected": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      }
+    }
+  }
+]
