@@ -6,12 +6,6 @@ The examples move from basic graph execution to tool-calling agents, typed state
 
 ## Scope of this README
 
-This document explains every Python script that is **not ignored by `.gitignore`**.
-
-Excluded by `.gitignore`:
-
-- `langgraph_studio/` (including `langgraph_studio/no_memory.py`)
-
 Included folders:
 
 - `simple_chain/`
