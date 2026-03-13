@@ -1,7 +1,7 @@
 # Example of a custom parallel graph with a custom reducer function.
 # Parallel nodes will return a list of values, and the custom reducer will combine and sort these lists.
 # Change the custom_reducer function by 'operator.add' to see how it affects the final output.
-# By Ed SCrimaglia
+# By Ed Scrimaglia
 
 from typing import List, Dict, Annotated
 from dotenv import load_dotenv
@@ -13,6 +13,7 @@ from pathlib import Path
 import operator
 load_dotenv()
 
+# Define a custom reducer function to combine and sort the results from parallel nodes
 def custom_reducer(left, right):
     """ combina y ordena los elementos de las listas left y right """
     if not isinstance(left, list):
@@ -21,10 +22,12 @@ def custom_reducer(left, right):
         right = [right]
     return sorted(left + right, reverse=False)
 
+# Define the state structure for the graph
 class State(TypedDict):
     state: Annotated[List, custom_reducer]
     # state: Annotated[List, operator.add]
 
+# Define a simple node that returns a value to be combined by the reducer
 class ReturnNodeValue():
     def __init__(self, node_secret: str):
         self._value = node_secret
@@ -33,7 +36,7 @@ class ReturnNodeValue():
         print (f"Adding {self._value} to {state['state']}")
         return {"state": [self._value]}
 
-# Save the graph
+# Save the graph as a PNG file
 def save_graph(path: str, graph: bytes):
     file_exist = Path(path).exists()
     if not file_exist:

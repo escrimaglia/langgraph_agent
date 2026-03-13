@@ -11,9 +11,11 @@ from pathlib import Path
 import operator
 load_dotenv()
 
+# Define the state structure for the graph
 class State(TypedDict):
     state: Annotated[List, operator.add]
 
+# Define a simple node that returns a value to be combined by the reducer
 class ReturnNodeValue():
     def __init__(self, node_secret: str):
         self._value = node_secret

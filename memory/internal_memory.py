@@ -15,9 +15,11 @@ from pathlib import Path
 
 load_dotenv()
 
+# Define the state structure for the graph
 class State(TypedDict):
     messages: Annotated[List[AnyMessage], add_messages]
 
+# Define some simple tools for the agent to use
 def multiplay(a: int, b: int) -> int:
     """
     Multiply two integers.
@@ -59,6 +61,7 @@ def devide(a: int, b: int) -> float:
         raise ValueError("Denominator cannot be zero.")
     return a / b
 
+# Save the graph as a PNG file
 def save_graph(path: str, graph: bytes):
     file_path = Path(path).exists()
     if not file_path:
@@ -68,6 +71,7 @@ def save_graph(path: str, graph: bytes):
     else:
         print(f"Graph already exists at {path}, skipping save.")
 
+# Serialize messages for JSON storage
 def serialize_messages(messages: List[AnyMessage]) -> List[Dict]:
     serialized = []
     for msg in messages:
@@ -80,6 +84,7 @@ def serialize_messages(messages: List[AnyMessage]) -> List[Dict]:
         })
     return serialized
 
+# Create a filter function to keep the message list manageable and token efficient
 def create_filter_messages(min_messages: int = 8, keep_count: int = 6):
     def filter_messages(state: State) -> State:    
         if len(state["messages"]) <= min_messages:

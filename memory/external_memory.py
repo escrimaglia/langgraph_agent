@@ -15,9 +15,11 @@ from pathlib import Path
 
 load_dotenv()
 
+# Define the state structure for the graph
 class State(TypedDict):
     messages: Annotated[List[AnyMessage], add_messages]
 
+# Define some simple tools for the agent to use
 def multiplay(a: int, b: int) -> int:
     """
     Multiply two integers.
@@ -59,6 +61,7 @@ def devide(a: int, b: int) -> float:
         raise ValueError("Denominator cannot be zero.")
     return a / b
 
+# Save the graph as a PNG file 
 def save_graph(path: str, graph: bytes):
     file_path = Path(path).exists()
     if not file_path:

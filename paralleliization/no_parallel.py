@@ -8,9 +8,11 @@ from langgraph.graph import START, END, StateGraph
 from pathlib import Path
 load_dotenv()
 
+# Define the state structure for the graph
 class State(TypedDict):
     state: str
 
+# Define a simple node that returns a value to be combined by the reducer
 class ReturnNodeValue():
     def __init__(self, node_secret: str):
         self._value = node_secret
@@ -19,7 +21,7 @@ class ReturnNodeValue():
         print (f"Adding {self._value} to {state['state']}")
         return {"state": self._value}
 
-# Save the graph
+# Save the graph as a PNG file
 def save_graph(path: str, graph: bytes):
     file_exist = Path(path).exists()
     if not file_exist:

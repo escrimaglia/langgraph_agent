@@ -16,7 +16,7 @@ from pathlib import Path
 
 load_dotenv()
 
-# Tools without parameters to access the state
+# Define some simple tools for the agent to use
 def multiplay(a: int, b: int) -> int:
     """
     Multiply two integers.
