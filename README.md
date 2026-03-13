@@ -1,4 +1,4 @@
-# LangGraph and LangChain First Projects
+# LangGraph and LangChain Agents
 
 This repository is a hands-on learning collection for beginners who want to understand how to build agent workflows with **LangGraph** and **LangChain**.
 
