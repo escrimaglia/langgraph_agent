@@ -339,4 +339,4 @@ Why it matters for beginners:
 3. Add evaluation scripts to compare answer quality with and without memory pruning.
 4. Convert one script into a production-ready service (API + persistent storage + logs).
 
-### `Ed Scrimaglia`
+```Ed Scrimaglia```
