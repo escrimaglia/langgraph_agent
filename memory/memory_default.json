@@ -1,14 +1,14 @@
 [
   {
     "type": "AIMessage",
-    "content": "The product of 6 and 7 is 42.",
-    "id": "lc_run--019ce340-564a-7241-b4b7-c0e66bfaace6-0",
+    "content": "The result of multiplying 6 and 7 is 42.",
+    "id": "lc_run--019e8657-6f39-7e10-bb1b-420ea4b28005-0",
     "name": null,
     "metadata": {
       "token_usage": {
-        "completion_tokens": 14,
+        "completion_tokens": 15,
         "prompt_tokens": 167,
-        "total_tokens": 181,
+        "total_tokens": 182,
         "completion_tokens_details": {
           "accepted_prediction_tokens": 0,
           "audio_tokens": 0,
@@ -18,37 +18,28 @@
         "prompt_tokens_details": {
           "audio_tokens": 0,
           "cached_tokens": 0
+        },
+        "latency_checkpoint": {
+          "engine_tbt_ms": 14,
+          "engine_ttft_ms": 37,
+          "engine_ttlt_ms": 248,
+          "pre_inference_ms": 150,
+          "service_tbt_ms": 14,
+          "service_ttft_ms": 329,
+          "service_ttlt_ms": 536,
+          "total_duration_ms": 393,
+          "user_visible_ttft_ms": 179
         }
       },
       "model_provider": "openai",
       "model_name": "gpt-4.1-mini-2025-04-14",
       "system_fingerprint": "fp_b6f445fc1c",
-      "id": "chatcmpl-DIeocqkJ28N4G0pyX55wB1NiAl2VR",
+      "id": "chatcmpl-Dm9wXSdVpUGhR8varaUapBb3lC8vt",
+      "service_tier": "default",
       "prompt_filter_results": [
         {
           "prompt_index": 0,
-          "content_filter_results": {
-            "hate": {
-              "filtered": false,
-              "severity": "safe"
-            },
-            "jailbreak": {
-              "filtered": false,
-              "detected": false
-            },
-            "self_harm": {
-              "filtered": false,
-              "severity": "safe"
-            },
-            "sexual": {
-              "filtered": false,
-              "severity": "safe"
-            },
-            "violence": {
-              "filtered": false,
-              "severity": "safe"
-            }
-          }
+          "content_filter_results": {}
         }
       ],
       "finish_reason": "stop",
@@ -59,12 +50,12 @@
           "severity": "safe"
         },
         "protected_material_code": {
-          "filtered": false,
-          "detected": false
+          "detected": false,
+          "filtered": false
         },
         "protected_material_text": {
-          "filtered": false,
-          "detected": false
+          "detected": false,
+          "filtered": false
         },
         "self_harm": {
           "filtered": false,
@@ -84,20 +75,20 @@
   {
     "type": "HumanMessage",
     "content": "add 10 to that",
-    "id": "a737cce3-b520-4647-a14c-ed2b41d22c13",
+    "id": "77a84903-2514-4195-a288-854987799a68",
     "name": "User",
     "metadata": {}
   },
   {
     "type": "AIMessage",
     "content": "",
-    "id": "lc_run--019ce340-5979-7410-ab07-3f162cfe7312-0",
+    "id": "lc_run--019e8657-72c0-7c31-af88-9231c588274d-0",
     "name": null,
     "metadata": {
       "token_usage": {
         "completion_tokens": 18,
-        "prompt_tokens": 194,
-        "total_tokens": 212,
+        "prompt_tokens": 195,
+        "total_tokens": 213,
         "completion_tokens_details": {
           "accepted_prediction_tokens": 0,
           "audio_tokens": 0,
@@ -107,12 +98,24 @@
         "prompt_tokens_details": {
           "audio_tokens": 0,
           "cached_tokens": 0
+        },
+        "latency_checkpoint": {
+          "engine_tbt_ms": 10,
+          "engine_ttft_ms": 40,
+          "engine_ttlt_ms": 226,
+          "pre_inference_ms": 214,
+          "service_tbt_ms": 13,
+          "service_ttft_ms": 407,
+          "service_ttlt_ms": 623,
+          "total_duration_ms": 422,
+          "user_visible_ttft_ms": 193
         }
       },
       "model_provider": "openai",
       "model_name": "gpt-4.1-mini-2025-04-14",
       "system_fingerprint": "fp_b6f445fc1c",
-      "id": "chatcmpl-DIeod6cw6Bl99OOiYnIdyhsXfD7P2",
+      "id": "chatcmpl-Dm9wYqyB70YPnBxWIoIWU2iKdDFi1",
+      "service_tier": "default",
       "prompt_filter_results": [
         {
           "prompt_index": 0,
@@ -122,8 +125,8 @@
               "severity": "safe"
             },
             "jailbreak": {
-              "filtered": false,
-              "detected": false
+              "detected": false,
+              "filtered": false
             },
             "self_harm": {
               "filtered": false,
@@ -148,20 +151,20 @@
   {
     "type": "ToolMessage",
     "content": "52",
-    "id": "8b323e1f-be43-449a-9f39-75d02fa600cd",
+    "id": "3701453c-75a7-4951-9a11-6f2762e00749",
     "name": "sum",
     "metadata": {}
   },
   {
     "type": "AIMessage",
-    "content": "Adding 10 to 42 gives 52.",
-    "id": "lc_run--019ce340-5d82-7150-a861-e6bd596786a7-0",
+    "content": "The result of adding 10 to 42 is 52.",
+    "id": "lc_run--019e8657-769e-7923-82f8-28081049c38d-0",
     "name": null,
     "metadata": {
       "token_usage": {
-        "completion_tokens": 12,
-        "prompt_tokens": 219,
-        "total_tokens": 231,
+        "completion_tokens": 15,
+        "prompt_tokens": 220,
+        "total_tokens": 235,
         "completion_tokens_details": {
           "accepted_prediction_tokens": 0,
           "audio_tokens": 0,
@@ -171,37 +174,28 @@
         "prompt_tokens_details": {
           "audio_tokens": 0,
           "cached_tokens": 0
+        },
+        "latency_checkpoint": {
+          "engine_tbt_ms": 11,
+          "engine_ttft_ms": 27,
+          "engine_ttlt_ms": 188,
+          "pre_inference_ms": 180,
+          "service_tbt_ms": 11,
+          "service_ttft_ms": 346,
+          "service_ttlt_ms": 502,
+          "total_duration_ms": 330,
+          "user_visible_ttft_ms": 166
         }
       },
       "model_provider": "openai",
       "model_name": "gpt-4.1-mini-2025-04-14",
       "system_fingerprint": "fp_b6f445fc1c",
-      "id": "chatcmpl-DIeoeDtarW84imFqYvCAWel5IbHcC",
+      "id": "chatcmpl-Dm9wZbTnWbvE11E1e2X0HF0wEJdwE",
+      "service_tier": "default",
       "prompt_filter_results": [
         {
           "prompt_index": 0,
-          "content_filter_results": {
-            "hate": {
-              "filtered": false,
-              "severity": "safe"
-            },
-            "jailbreak": {
-              "filtered": false,
-              "detected": false
-            },
-            "self_harm": {
-              "filtered": false,
-              "severity": "safe"
-            },
-            "sexual": {
-              "filtered": false,
-              "severity": "safe"
-            },
-            "violence": {
-              "filtered": false,
-              "severity": "safe"
-            }
-          }
+          "content_filter_results": {}
         }
       ],
       "finish_reason": "stop",
@@ -212,12 +206,12 @@
           "severity": "safe"
         },
         "protected_material_code": {
-          "filtered": false,
-          "detected": false
+          "detected": false,
+          "filtered": false
         },
         "protected_material_text": {
-          "filtered": false,
-          "detected": false
+          "detected": false,
+          "filtered": false
         },
         "self_harm": {
           "filtered": false,
@@ -237,20 +231,20 @@
   {
     "type": "HumanMessage",
     "content": "Gracias Kiro",
-    "id": "1d24ca2d-6ddf-457a-a2e2-1e6c868dd858",
+    "id": "9194e7c4-397e-4b86-85e3-8cb1b8d5cce4",
     "name": "User",
     "metadata": {}
   },
   {
     "type": "AIMessage",
     "content": "¡De nada! Si necesitas más ayuda, aquí estaré. ¡Que tengas un buen día!",
-    "id": "lc_run--019ce340-6076-7ea2-b657-be863d327f07-0",
+    "id": "lc_run--019e8657-7a1b-76f1-b154-5850fe8d0d55-0",
     "name": null,
     "metadata": {
       "token_usage": {
         "completion_tokens": 22,
-        "prompt_tokens": 199,
-        "total_tokens": 221,
+        "prompt_tokens": 203,
+        "total_tokens": 225,
         "completion_tokens_details": {
           "accepted_prediction_tokens": 0,
           "audio_tokens": 0,
@@ -260,12 +254,24 @@
         "prompt_tokens_details": {
           "audio_tokens": 0,
           "cached_tokens": 0
+        },
+        "latency_checkpoint": {
+          "engine_tbt_ms": 11,
+          "engine_ttft_ms": 36,
+          "engine_ttlt_ms": 272,
+          "pre_inference_ms": 333,
+          "service_tbt_ms": 11,
+          "service_ttft_ms": 516,
+          "service_ttlt_ms": 741,
+          "total_duration_ms": 428,
+          "user_visible_ttft_ms": 184
         }
       },
       "model_provider": "openai",
       "model_name": "gpt-4.1-mini-2025-04-14",
       "system_fingerprint": "fp_b6f445fc1c",
-      "id": "chatcmpl-DIeof2qNFMkk9GJ27qm3tsc4I0pRM",
+      "id": "chatcmpl-Dm9wa73CQnx5yBd2QWIHcTvRoIcf6",
+      "service_tier": "default",
       "prompt_filter_results": [
         {
           "prompt_index": 0,
@@ -275,8 +281,8 @@
               "severity": "safe"
             },
             "jailbreak": {
-              "filtered": false,
-              "detected": false
+              "detected": false,
+              "filtered": false
             },
             "self_harm": {
               "filtered": false,
@@ -301,12 +307,12 @@
           "severity": "safe"
         },
         "protected_material_code": {
-          "filtered": false,
-          "detected": false
+          "detected": false,
+          "filtered": false
         },
         "protected_material_text": {
-          "filtered": false,
-          "detected": false
+          "detected": false,
+          "filtered": false
         },
         "self_harm": {
           "filtered": false,
